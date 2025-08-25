@@ -1,0 +1,63 @@
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: green;
+  /* Text color on hover */
+
+}
+
+
+.header {
+  background-image: url('../images/woman-pushing-shopping-cart.jpg');
+  background-size: cover;
+  /* make it fill nicely */
+  background-position: center;
+  /* center the image */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  /* fixed height (e.g., 80% of viewport height) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+
+}
+
+.onHover {
+  background-color: rgb(195, 125, 46);
+  border-radius: 12px;
+  /* optional for smooth look */
+  cursor: pointer;
+}
+
+.onHover:hover {
+  transform: scale(1.03);
+}
+
+.onHover span {
+  font-size: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  margin: 5px;
+}
+
+em {
+  text-decoration: line-through;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  padding: 30px;
+}
