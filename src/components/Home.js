@@ -6,7 +6,7 @@ import Category from './Category';
 import TodaysDeals from './TodaysDeals';
 import OurPronise from './OurPromise';
 import Footer from './Footer';
-
+import BottomNav from "./categories/BottomNav";
 
 const Home = () => {
     return (
@@ -17,6 +17,7 @@ const Home = () => {
             <TodaysDeals />
             <OurPronise />
             <Footer />
+            <BottomNav/>
         </div>
     )
 }

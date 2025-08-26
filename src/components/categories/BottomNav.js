@@ -22,6 +22,10 @@ const BottomNav = () =>{
                 </div>
 
                 <div style={styles.links}>
+                        <Link to="/about" className="link">  <span>🧾</span> About</Link>
+                </div>
+
+                <div style={styles.links}>
                         <Link to="" className="link">   <span>🔍</span> Search</Link>
                 </div>
 
@@ -30,7 +34,7 @@ const BottomNav = () =>{
                 </div>
 
                 <div style={styles.links}>
-                         <Link to="" className="link">   <span>👤</span> Profile</Link>
+                         <Link to="/profile" className="link">   <span>👤</span> Profile</Link>
                 </div>
 
             </div>

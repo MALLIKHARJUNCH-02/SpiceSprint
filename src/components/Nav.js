@@ -10,10 +10,11 @@ const NavBar = () => {
             <div style={styles.navbar}>
                 <h1 style={styles.h1}>SpiceSprint | Quick Cart - Happy Heart</h1>
                 <ul style={styles.linksList}>
-                    <li style={styles.buttonLinks}><a href="" className="link">Home</a></li>
+                    <li style={styles.buttonLinks}><Link to="/" className="link">Home</Link></li>
                     <li style={styles.buttonLinks}><Link to="/categories" className="link">Categories</Link></li>
                     <li style={styles.buttonLinks}><a href="" className="link">Deals</a></li>
-                    <li style={styles.buttonLinks}><a href="" className="link">About</a></li>
+                    <li style={styles.buttonLinks}><Link to="/about" className="link">About</Link></li>
+                    <li style={styles.buttonLinks}><Link to="/profile" className="link">Profile</Link></li>
                 </ul>
                 <button type="button" class="btn btn-success"><Link to='/loginsignup' className="link">SignUp</Link></button>
             </div>
