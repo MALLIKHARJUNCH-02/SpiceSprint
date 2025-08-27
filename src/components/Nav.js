@@ -22,7 +22,16 @@ const NavBar = () => {
     return (
         <nav>
             <div style={styles.navbar}>
-                <h1 style={styles.h1}> <img src="/SpiceSprint.png" alt="SpiceSprint Logo" style={{width: '20px', heighi: '20px'}}/> SpiceSprint | Quick Cart - Happy Heart</h1>
+                <div style={styles.ProfileHeading}>
+                    <div style={styles.SpiceSprintLogo}>
+                        🌶️
+                    </div>
+
+                    <div style={styles.SpiceSprintLogoInfo}>
+                        <h4>SpiceSprint</h4>
+                        <p>Quick Cart - Happy Heart</p>
+                    </div>
+                </div>
 
                 {isMobile ? (
                     <>
@@ -58,7 +67,7 @@ const NavBar = () => {
                             <li style={styles.buttonLinks}><Link to="/about" className="link">About</Link></li>
                             <li style={styles.buttonLinks}><Link to="/profile" className="link">Profile</Link></li>
                         </ul>
-                        <button type="button" className="btn btn-success">
+                        <button type="button" className="btn btn-info">
                             <Link to='/loginsignup' className="link">SignUp</Link>
                         </button>
                     </>

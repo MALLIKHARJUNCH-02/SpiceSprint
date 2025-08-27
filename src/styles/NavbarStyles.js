@@ -5,7 +5,7 @@ const styles = {
         alignItems: 'center',
         padding: '10px',
         flexWrap: 'wrap',
-        background: "#d98260ff",
+        background: "#4b7aa3ff",
        
     },
     h1:{
@@ -21,9 +21,23 @@ const styles = {
     buttonLinks: {
         padding: '10px',
     },
-    h1:{
-        fontSize: '18px',
-    }
+     ProfileHeading: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    SpiceSprintLogo: {
+        width: '40px',
+        height: '40px',
+        background: '#a276b8ff',
+        borderRadius: '10%',
+        padding: '5px',
+        fontSize: '20px',
+        margin: '10px'
+    },
+    SpiceSprintLogoInfo: {
+        marginTop: '15px'
+    },
 }
 
 
