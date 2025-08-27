@@ -2,15 +2,27 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import styles from './aboutstyles';
+import { useState } from "react";
+import { useEffect } from "react";
 
 import Footer from "../Footer";
 import BottomNav from "../categories/BottomNav";
 
 const About = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 500);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
+
     return (
         <div>
-            <div><BottomNav/></div>
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{ width: '100vw', height: '100vh' }}>
+            <div><BottomNav /></div>
+            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{ width: '100vw', height: '100vh', display: isMobile ? "none" : "block" }}>
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -21,7 +33,7 @@ const About = () => {
                     <div className="carousel-item active" style={{ height: '100vh' }}>
                         <img src="/young-fashion-woman.jpg" className="d-block w-100" alt="First slide"
                             style={{ height: '100vh', objectFit: 'cover' }} />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption">
                             <button type="button" className="btn btn-secondary">
                                 <Link to='/loginsignup' className="link">SignUp</Link>
                             </button>
@@ -32,7 +44,7 @@ const About = () => {
                     <div className="carousel-item" style={{ height: '100vh' }}>
                         <img src="/healthy-food-with-emojis.jpg" className="d-block w-100" alt="Second slide"
                             style={{ height: '100vh', objectFit: 'cover' }} />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption ">
                             <p>Healthy choices made easy — explore our wellness range</p>
                             <button type="button" className="btn btn-secondary">
                                 <Link to='/loginsignup' className="link">SignUp</Link>
@@ -43,7 +55,7 @@ const About = () => {
                     <div className="carousel-item" style={{ height: '100vh' }}>
                         <img src="/top-view-delicious-meals-arrangement.jpg" className="d-block w-100" alt="Third slide"
                             style={{ height: '100vh', objectFit: 'cover' }} />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption">
                             <button type="button" className="btn btn-secondary">
                                 <Link to='/loginsignup' className="link">SignUp</Link>
                             </button>
@@ -62,44 +74,47 @@ const About = () => {
                 </button>
             </div>
 
+            <div><h1>The SpiceSprint Team</h1>
+                <div style={styles.cards}>
 
-            <div style={styles.cards}>
 
-                <div className="card" style={{ width: '18rem' }}>
-                    <img src="/1cmk.jpg" className="card-img-top" alt="Chilukuri Mallikharjun Reddy" />
-                    <div className="card-body">
-                        <h5>Chief Executive Officer</h5>
-                        <p className="card-text">Chilukuri Mallikharjun Reddy</p>
-                        <a href="https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                            LinkedIn
-                        </a>
+                    <div className="card" style={{ width: '18rem' }}>
+                        <img src="/1cmk.jpg" className="card-img-top" alt="Chilukuri Mallikharjun Reddy" />
+                        <div className="card-body">
+                            <h5>Chief Executive Officer</h5>
+                            <p className="card-text">Chilukuri Mallikharjun Reddy</p>
+                            <a href="https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                                LinkedIn
+                            </a>
 
+                        </div>
+                    </div>
+
+                    <div className="card" style={{ width: '18rem' }}>
+                        <img src="/1cmk.jpg" className="card-img-top" alt="Chilukuri Mallikharjun Reddy" />
+                        <div className="card-body">
+                            <h5>Chief Operating Officer</h5>
+                            <p className="card-text">Chilukuri Mallikharjun Reddy</p>
+                            <a href="https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                                LinkedIn
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div className="card" style={{ width: '18rem' }}>
+                        <img src="/1cmk.jpg" className="card-img-top" alt="Chilukuri Mallikharjun Reddy" />
+                        <div className="card-body">
+                            <h5>Chief Technology Office</h5>
+                            <p className="card-text">Chilukuri Mallikharjun Reddy</p>
+                            <a href="https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                                LinkedIn
+                            </a>
+
+                        </div>
                     </div>
                 </div>
 
-                <div className="card" style={{ width: '18rem' }}>
-                    <img src="/1cmk.jpg" className="card-img-top" alt="Chilukuri Mallikharjun Reddy" />
-                    <div className="card-body">
-                        <h5>Chief Operating Officer</h5>
-                        <p className="card-text">Chilukuri Mallikharjun Reddy</p>
-                        <a href="https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                            LinkedIn
-                        </a>
-
-                    </div>
-                </div>
-
-                <div className="card" style={{ width: '18rem' }}>
-                    <img src="/1cmk.jpg" className="card-img-top" alt="Chilukuri Mallikharjun Reddy" />
-                    <div className="card-body">
-                        <h5>Chief Technology Office</h5>
-                        <p className="card-text">Chilukuri Mallikharjun Reddy</p>
-                        <a href="https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                            LinkedIn
-                        </a>
-
-                    </div>
-                </div>
             </div>
 
             <div style={styles.About}>
@@ -349,7 +364,7 @@ const About = () => {
 
 
             <div>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     )

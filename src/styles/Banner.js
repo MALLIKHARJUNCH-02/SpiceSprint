@@ -2,8 +2,8 @@ const bannerStyles = {
     bannerLeft: {
         display: 'flex',
         flexDirection: 'column',
-        width: '50%',
-        padding: '100px',
+        width: '100%',
+        padding: '10px',
         height: 'auto',
     },
     header: {
@@ -13,23 +13,6 @@ const bannerStyles = {
     bannerHigh: {
         display: 'flex',
     },
-    bannerRight: {
-        display: 'flex',
-        flexDirection: 'column',
-        width: '50%',
-        padding: '100px',
-        height: 'auto',
-    },
-    bannerRightIcon: {
-        height: '200px',
-        fontSize: '100px',
-        textAlign: 'center'
-    },
-    bannerRightInfo: {
-        background: '#d8d5dbae',
-        borderRadius: '30px',
-        textAlign: 'center'
-    }
 }
 
 

@@ -39,7 +39,9 @@ const Mainstyles = {
     },
     categories: {
         display: 'flex',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     span: {
         width: '50px',

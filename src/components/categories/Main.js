@@ -11,6 +11,9 @@ const Main = () => {
             <div>
                 <h2>Shop by Categories</h2>
                 <p>Fresh groceries delivered to your doorstep</p>
+                <p style={{color: 'red'}}><strong> Note:</strong> The backend of this web app is still being built. Some features may not 
+                        work fully yet as I develop the server and database. Thank you for your patience
+                         and interest in my work.</p>
             </div>
 
             <div style={styles.categories}>

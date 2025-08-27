@@ -32,13 +32,20 @@ const ProfileStyles = {
         boxShadow: '1px 2px 3px 2px rgba(0, 0, 0, 0.4)',
         padding: '10px',
         margin: '15px',
-        borderRadius: '10%'
+        borderRadius: '10%',
+        textAlign: 'center'
     },
     ProfileOwnerImg: {
         width: '200px',
         height: '200px',
         background: '#a27070ff',
-        borderRadius: '100%'
+        borderRadius: '100%',
+        textAlign: 'center',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '0 auto',
+        overflow: 'hidden',
     },
     AccountSettings: {
         display: 'flex',

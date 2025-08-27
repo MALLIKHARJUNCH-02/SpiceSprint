@@ -3,11 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.css';
 import styles from "../styles/TodaysDeals";
 
-import banana from '../images/bananas.png';
-import lettuce from '../images/Fresh Lettuce.webp';
-import grapes from '../images/grapes.avif';
-
-
 const TodaysDeals = () => {
     return (
         <div style={styles.hero}>
@@ -20,7 +15,7 @@ const TodaysDeals = () => {
 
             <div style={styles.card}>
                 <div className="card" style={{ width: "300px" }}>
-                    <img src={banana} className="card-img-top" alt="..." />
+                    <img src="bananas.png" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Organic Bananas</h5>
                         <p className="card-text">
@@ -35,7 +30,7 @@ const TodaysDeals = () => {
                 </div>
 
                 <div className="card" style={{ width: "300px" }}>
-                    <img src={lettuce} className="card-img-top" alt="..." />
+                    <img src="Fresh Lettuce.webp" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Fresh Lettuce</h5>
                         <p className="card-text">
@@ -51,7 +46,7 @@ const TodaysDeals = () => {
 
 
                 <div className="card" style={{ width: "300px" }}>
-                    <img src={grapes} className="card-img-top" alt="..." />
+                    <img src="grapes.avif" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Purple Grapes</h5>
                         <p className="card-text">

@@ -2,11 +2,24 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bannerStyles from "../styles/Banner";
 import '../styles/style.css';
+import { useState } from "react";
+import { useEffect } from "react";
 
 
 const Banner = () => {
+
+    const [isMobile, setIsmobile] = useState(window.innerWidth < 1000);
+
+    useEffect(() => {
+
+        const handleReSize = () => setIsmobile(window.innerWidth < 1000);
+        window.addEventListener('resize', handleReSize);
+        return () => window.removeEventListener('resize', handleReSize);
+
+    }, []);
+    
     return (
-        <header style={bannerStyles.header } className="header">
+        <header style={bannerStyles.header} className="header">
             <div style={bannerStyles.bannerLeft}>
                 <h1>Fresh Groceries And Food Delivered to Your Door</h1>
                 <p>Get fresh produce, pantry staples, and your favorite meals delivered in under 30 minutes.</p>
@@ -26,14 +39,9 @@ const Banner = () => {
                         <span>Free delivery over ₹ 599</span>
                     </div>
                 </div>
-            </div>
-
-            <div style={bannerStyles.bannerRight}>
-                <div style={bannerStyles.bannerRightInfo}>
-                    <div style={bannerStyles.bannerRightIcon}>🥗</div>
-                    <h3>Fresh & Healthy</h3>
-                    <p>Premium quality groceries and meals</p>
-                </div>
+                <p style={{ color: 'red' }}><strong> Note:</strong> The backend of this web app is still being built. Some features may not
+                    work fully yet as I develop the server and database. Thank you for your patience
+                    and interest in my work.</p>
             </div>
         </header>
     )

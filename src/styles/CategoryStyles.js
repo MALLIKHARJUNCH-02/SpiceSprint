@@ -22,6 +22,7 @@ const CategoryStyles = {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        minWidth: '200px'
     },
 }
 

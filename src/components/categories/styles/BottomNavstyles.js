@@ -4,7 +4,7 @@ const BottomNavstyles = {
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
         alignItems: 'center',
-        background: '#e9e0e0ff',
+        background: '#d98260ff',
         position: 'fixed',
         bottom: 0,
         width: '100%',

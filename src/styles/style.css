@@ -11,7 +11,7 @@
 
 
 .header {
-  background-image: url('../images/woman-pushing-shopping-cart.jpg');
+  /* background-image: url('../images/woman-pushing-shopping-cart.jpg'); */
   background-size: cover;
   /* make it fill nicely */
   background-position: center;
@@ -60,4 +60,6 @@ em {
 
 footer {
   padding: 30px;
+  width: 100%;
+  margin-bottom: 42px;
 }

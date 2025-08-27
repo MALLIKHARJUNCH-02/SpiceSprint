@@ -3,6 +3,9 @@ const AboutStyles = {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
+        height: 'auto',
+        width: 'auto',
+        marginTop: '10px',
     },
     FAQ: {
         display: 'flex',
@@ -21,13 +24,13 @@ const AboutStyles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '100vw',       // Fill viewport width for proper centering
-        height: '100vh',      // Full viewport height for vertical centering
-        textAlign: 'center',  // Center text
-        marginTop: '25px',
+        width: '100vw',       
+        height: 'auto',      
+        textAlign: 'center', 
+        marginTop: '20px',
     },
     Inner: {
-        maxWidth: '800px',    // Optional: makes text blocks easier to read
+        maxWidth: '800px',   
         width: '100%',
     }
 }

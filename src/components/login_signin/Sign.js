@@ -9,7 +9,9 @@ const SignIn = () => {
         <div style={styles.form}>
             <form className="w-50">
                 <h1 className="h3 mb-3 fw-normal">Create an Account</h1>
-
+                <p style={{ color: 'red' }}><strong> Note:</strong> The backend of this web app is still being built. Some features may not
+                    work fully yet as I develop the server and database. Thank you for your patience
+                    and interest in my work.</p>
                 {/* Name Input */}
                 <div className="form-floating m-1">
                     <input

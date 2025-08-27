@@ -42,7 +42,12 @@ const Profile = () => {
 
                     <div>
                         <button type="button" class="btn btn-primary">Edit Profile</button>
+                        <p style={{color: 'red'}}><strong> Note:</strong> The backend of this web app is still being built. Some features may not 
+                        work fully yet as I develop the server and database. Thank you for your patience
+                         and interest in my work.</p>
                     </div>
+
+                    
                 </div>
             </div>
 
@@ -51,7 +56,7 @@ const Profile = () => {
 
                 <div style={styles.Settings}>
 
-                    <div  style={styles.AccountSettings}>
+                    <div style={styles.AccountSettings}>
                         <h3>⚙️ Account Settings</h3>
 
                         <div style={styles.Email}>
@@ -62,14 +67,14 @@ const Profile = () => {
 
                             <div>
                                 <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked/>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
                         </div>
 
 
-                        <div style={styles.Email}> 
+                        <div style={styles.Email}>
                             <div>
                                 <h6>Quick Cart Auto-Save</h6>
                                 <p>Automatically save cart items</p>
@@ -77,7 +82,7 @@ const Profile = () => {
 
                             <div>
                                 <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked/>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
@@ -85,7 +90,7 @@ const Profile = () => {
                     </div>
 
 
-                    <div  style={styles.AccountSettings}>
+                    <div style={styles.AccountSettings}>
                         <h3>⚙️ Account Settings</h3>
 
                         <div style={styles.Email}>
@@ -96,14 +101,14 @@ const Profile = () => {
 
                             <div>
                                 <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked/>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
                         </div>
 
 
-                        <div style={styles.Email}> 
+                        <div style={styles.Email}>
                             <div>
                                 <h6>Quick Cart Auto-Save</h6>
                                 <p>Automatically save cart items</p>
@@ -111,7 +116,7 @@ const Profile = () => {
 
                             <div>
                                 <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked/>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
@@ -121,11 +126,11 @@ const Profile = () => {
             </div>
 
             <div>
-                <Footer/>
+                <Footer />
             </div>
 
             <div>
-                <BottomNav/>
+                <BottomNav />
             </div>
         </div>
     )
