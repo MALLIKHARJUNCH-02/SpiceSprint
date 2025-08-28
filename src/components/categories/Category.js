@@ -9,7 +9,7 @@ const Category = () => {
         <div>
             <TopNav />
             <Main />
-            <BottomNav />
+            {/* <BottomNav /> */}
         </div>
     )
 }

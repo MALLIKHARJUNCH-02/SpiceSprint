@@ -5,13 +5,13 @@ import '../styles/style.css';
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 850);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 850);
-            if (window.innerWidth >= 850) {
+            setIsMobile(window.innerWidth < 900);
+            if (window.innerWidth >= 900) {
                 setMenuOpen(false); // close menu on desktop size
             }
         };
@@ -49,6 +49,7 @@ const NavBar = () => {
                                 <li style={styles.buttonLinks}><Link to="/categories" className="link" onClick={() => setMenuOpen(false)}>Categories</Link></li>
                                 <li style={styles.buttonLinks}><a href="" className="link" onClick={() => setMenuOpen(false)}>Deals</a></li>
                                 <li style={styles.buttonLinks}><Link to="/about" className="link" onClick={() => setMenuOpen(false)}>About</Link></li>
+                                <li style={styles.buttonLinks}><Link to="/" className="link" onClick={() => setMenuOpen(false)}>Cart</Link></li>
                                 <li style={styles.buttonLinks}><Link to="/profile" className="link" onClick={() => setMenuOpen(false)}>Profile</Link></li>
                                 <li style={styles.buttonLinks}>
                                     <button type="button" className="btn btn-success w-100">
@@ -65,6 +66,7 @@ const NavBar = () => {
                             <li style={styles.buttonLinks}><Link to="/categories" className="link">Categories</Link></li>
                             <li style={styles.buttonLinks}><a href="" className="link">Deals</a></li>
                             <li style={styles.buttonLinks}><Link to="/about" className="link">About</Link></li>
+                            <li style={styles.buttonLinks}><Link to="/" className="link">Cart</Link></li>
                             <li style={styles.buttonLinks}><Link to="/profile" className="link">Profile</Link></li>
                         </ul>
                         <button type="button" className="btn btn-info">

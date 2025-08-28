@@ -91,7 +91,7 @@ const Profile = () => {
 
 
                     <div style={styles.AccountSettings}>
-                        <h3>⚙️ Account Settings</h3>
+                        <h3>🚚 Delivery Preferences</h3>
 
                         <div style={styles.Email}>
                             <div>

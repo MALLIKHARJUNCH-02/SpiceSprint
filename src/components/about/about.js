@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import styles from './aboutstyles';
 import { useState } from "react";
 import { useEffect } from "react";
+import CountUp from 'react-countup';
 
 import Footer from "../Footer";
 import BottomNav from "../categories/BottomNav";
+import NavBar from "../Nav";
 
 const About = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
@@ -21,57 +23,34 @@ const About = () => {
 
     return (
         <div>
-            <div><BottomNav /></div>
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" style={{ width: '100vw', height: '100vh', display: isMobile ? "none" : "block" }}>
-                <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div><NavBar /></div>
+
+            <div style={styles.Welcome}>
+                <h3 style={styles.h1}>Welcome to SpiceSprint!</h3>
+                <div>
+                    <p style={{color: ' #26734d'}}>
+                        Empowering your kitchen. Saving you time. Connecting neighborhoods with fresh groceries and delicious meals every day.
+                    </p>
                 </div>
+            </div>
 
-                <div className="carousel-inner" style={{ height: '100vh' }}>
-                    <div className="carousel-item active" style={{ height: '100vh' }}>
-                        <img src="/young-fashion-woman.jpg" className="d-block w-100" alt="First slide"
-                            style={{ height: '100vh', objectFit: 'cover' }} />
-                        <div className="carousel-caption">
-                            <button type="button" className="btn btn-secondary">
-                                <Link to='/loginsignup' className="link">SignUp</Link>
-                            </button>
-                            <p>Get 30% off on everything — limited time only!</p>
-                        </div>
-                    </div>
-
-                    <div className="carousel-item" style={{ height: '100vh' }}>
-                        <img src="/healthy-food-with-emojis.jpg" className="d-block w-100" alt="Second slide"
-                            style={{ height: '100vh', objectFit: 'cover' }} />
-                        <div className="carousel-caption ">
-                            <p>Healthy choices made easy — explore our wellness range</p>
-                            <button type="button" className="btn btn-secondary">
-                                <Link to='/loginsignup' className="link">SignUp</Link>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="carousel-item" style={{ height: '100vh' }}>
-                        <img src="/top-view-delicious-meals-arrangement.jpg" className="d-block w-100" alt="Third slide"
-                            style={{ height: '100vh', objectFit: 'cover' }} />
-                        <div className="carousel-caption">
-                            <button type="button" className="btn btn-secondary">
-                                <Link to='/loginsignup' className="link">SignUp</Link>
-                            </button>
-                            <p style={{ color: '#b9b928' }}>Save time and energy — let SpiceSprint handle your grocery needs</p>
-                        </div>
-                    </div>
+            <div style={{...styles.quickFactsStyle, display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                <div>
+                    {/* <span style={styles.labelStyle}>Serving:&nbsp;</span> */}
+                    <span style={styles.numberStyle}><CountUp end={10} duration={2} />+ cities</span>
                 </div>
-
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
+                <div>
+                    {/* <span style={styles.labelStyle}>Deliveries:&nbsp;</span> */}
+                    <span style={styles.numberStyle}> <CountUp end={5000} duration={1} separator=',' />+ Deliveries</span>
+                </div>
+                <div>
+                    {/* <span style={styles.labelStyle}>Vendors:&nbsp;</span> */}
+                    <span style={styles.numberStyle}> <CountUp end={50} duration={1} />+ local partners</span>
+                </div>
+                <div>
+                    {/* <span style={styles.labelStyle}>Customers:&nbsp;</span> */}
+                    <span style={styles.numberStyle}> <CountUp end={1000} duration={1} separator=',' />+ happy hearts </span>
+                </div>
             </div>
 
             <div><h1>The SpiceSprint Team</h1>

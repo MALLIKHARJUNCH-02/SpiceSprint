@@ -17,7 +17,7 @@ const Home = () => {
             <TodaysDeals />
             <OurPronise />
             <Footer />
-            <BottomNav/>
+            {/* <BottomNav/> */}
         </div>
     )
 }
