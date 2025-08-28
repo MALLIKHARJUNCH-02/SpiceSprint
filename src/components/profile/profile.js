@@ -128,10 +128,6 @@ const Profile = () => {
             <div>
                 <Footer />
             </div>
-
-            <div>
-                <BottomNav />
-            </div>
         </div>
     )
 }

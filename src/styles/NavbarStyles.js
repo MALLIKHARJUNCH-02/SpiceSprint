@@ -6,6 +6,7 @@ const styles = {
         padding: '10px',
         flexWrap: 'wrap',
         background: "#4b7aa3ff",
+        width: '100%'
        
     },
     h1:{
