@@ -6,7 +6,7 @@ import styles from "./styles/LoginStyles";
 import NavBar from "../Nav";
 import { useNavigate } from "react-router-dom";
 const SignIn = () => {
-
+    const navigate = useNavigate();
     const [message, setMessage] = useState(""); // Use state for message
     const [messageType, setMessageType] = useState(""); // Use state for messageType
 
