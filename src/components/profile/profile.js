@@ -8,6 +8,7 @@ import Home from "../Home";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import Dropdown from 'react-bootstrap/Dropdown';
 const Profile = () => {
     const navigate = useNavigate();
     const isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -127,16 +128,17 @@ const Profile = () => {
                         <div style={styles.Email}>
                             <div>
                                 <h6>Preferred Delivery Time</h6>
-                                <div className="dropdown">
-                                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Dropdown>
+                                    <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                                         Delivery Time
-                                    </button>
-                                    <ul className="dropdown-menu">
-                                        <li><a className="dropdown-item" href="#">morning</a></li>
-                                        <li><a className="dropdown-item" href="#">afternoon</a></li>
-                                        <li><a className="dropdown-item" href="#">evening</a></li>
-                                    </ul>
-                                </div>
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="#">Morning</Dropdown.Item>
+                                        <Dropdown.Item href="#">Afternoon</Dropdown.Item>
+                                        <Dropdown.Item href="#">Evening</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
                             </div>
 
                             <div>
