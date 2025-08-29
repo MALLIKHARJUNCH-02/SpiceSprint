@@ -1,11 +1,36 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import styles from "./ProfileStyles";
 import BottomNav from "../categories/BottomNav";
 import Footer from "../Footer";
-
+import Home from "../Home";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
 const Profile = () => {
+    const navigate = useNavigate();
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    useEffect(() => {
+        if (isLoggedIn !== "true") {
+            navigate("/loginsignup"); // redirect if not logged in
+        }
+    }, [isLoggedIn, navigate]);
+    const handleClick = () => {
+        localStorage.setItem("isLoggedIn", "false");
+        window.location.href = "/";
+    }
+
+    const [userName, setUserName] = useState("");
+    const [userEmail, setUserEmail] = useState("");
+    
+    useEffect(() => {
+        setUserName(localStorage.getItem("userName") || "");
+        setUserEmail(localStorage.getItem("userEmail") || "");
+    }, []);
+
+    const imgFirst = userName[0];
     return (
 
         <div>
@@ -31,23 +56,29 @@ const Profile = () => {
 
             <div style={styles.ProfileOwner}>
                 <div>
-                    <div style={styles.ProfileOwnerImg}>
-                        img
+                    <div style={{...styles.ProfileOwnerImg, fontSize: "150px", fontFamily: "cursive", color: "lightgray"}}>
+                        {imgFirst}
                     </div>
 
                     <div>
-                        <h4>Chilukuri Mallikharjun</h4>
-                        <p>mkreddychilukuri075@gmail.com</p>
+                        <h4>{userName}</h4>
+                        <p>{userEmail}</p>
                     </div>
 
                     <div>
-                        <button type="button" class="btn btn-primary">Edit Profile</button>
-                        <p style={{color: 'red'}}><strong> Note:</strong> The backend of this web app is still being built. Some features may not 
-                        work fully yet as I develop the server and database. Thank you for your patience
-                         and interest in my work.</p>
+                        <button type="button" class="btn btn-primary m-1">Edit Profile</button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary m-1"
+                            onClick={handleClick}>
+                            Logout
+                        </button>
+                        <p style={{ color: 'red' }}><strong> Note:</strong> The backend of this web app is still being built. Some features may not
+                            work fully yet as I develop the server and database. Thank you for your patience
+                            and interest in my work.</p>
                     </div>
 
-                    
+
                 </div>
             </div>
 

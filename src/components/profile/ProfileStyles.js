@@ -46,6 +46,7 @@ const ProfileStyles = {
         alignItems: 'center',
         margin: '0 auto',
         overflow: 'hidden',
+        border: "4px solid blue"
     },
     AccountSettings: {
         display: 'flex',

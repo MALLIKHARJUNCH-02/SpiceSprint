@@ -10,6 +10,7 @@ import SignIn from "./components/login_signin/Sign";
 import About from "./components/about/about";
 import Profile from "./components/profile/profile";
 import SplashScreen from "./components/splashscreen/SplashScreen"; // <-- create this
+import ProtectedRoute from "./ProtectedRoute ";
 
 // Main router (your current app)
 function MainApp() {
@@ -21,7 +22,14 @@ function MainApp() {
         <Route path="/loginsignup" element={<LoginSignup />} />
         <Route path="/signup" element={<SignIn />} />
         <Route path="/about" element={<About />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </Router>
   );
