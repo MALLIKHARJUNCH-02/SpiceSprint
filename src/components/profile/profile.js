@@ -47,7 +47,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-outline-warning">
+                    <button type="button" className="btn btn-outline-warning">
                         <Link to="/" className="link">Home</Link></button>
                 </div>
             </div>
@@ -66,10 +66,10 @@ const Profile = () => {
                     </div>
 
                     <div>
-                        <button type="button" class="btn btn-primary m-1">Edit Profile</button>
+                        <button type="button" className="btn btn-primary m-1">Edit Profile</button>
                         <button
                             type="button"
-                            class="btn btn-secondary m-1"
+                            className="btn btn-secondary m-1"
                             onClick={handleClick}>
                             Logout
                         </button>
@@ -97,8 +97,8 @@ const Profile = () => {
                             </div>
 
                             <div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
@@ -112,8 +112,8 @@ const Profile = () => {
                             </div>
 
                             <div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
@@ -127,21 +127,21 @@ const Profile = () => {
                         <div style={styles.Email}>
                             <div>
                                 <h6>Preferred Delivery Time</h6>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div className="dropdown">
+                                    <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Delivery Time
                                     </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">morning</a></li>
-                                        <li><a class="dropdown-item" href="#">afternoon</a></li>
-                                        <li><a class="dropdown-item" href="#">evening</a></li>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="#">morning</a></li>
+                                        <li><a className="dropdown-item" href="#">afternoon</a></li>
+                                        <li><a className="dropdown-item" href="#">evening</a></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
@@ -155,8 +155,8 @@ const Profile = () => {
                             </div>
 
                             <div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
+                                <div className="form-check form-switch">
+                                    <input className="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked />
                                 </div>
 
                             </div>
