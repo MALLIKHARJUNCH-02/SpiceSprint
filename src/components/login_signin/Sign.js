@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./styles/LoginStyles";
 import NavBar from "../Nav";
-
+import { useNavigate } from "react-router-dom";
 const SignIn = () => {
 
     const [message, setMessage] = useState(""); // Use state for message
@@ -47,9 +47,15 @@ const SignIn = () => {
             if (response.ok) {
                 setMessage("Signup successful!");
                 setMessageType("success");
+                setTimeout(() => {
+                    navigate("/loginsignup");
+                }, 2000);
             } else {
                 setMessage(data.message || "Signup failed");
                 setMessageType("error")
+                setTimeout(() => {
+                    navigate("/loginsignup");
+                }, 2000);
             }
         } catch (error) {
             console.error("Error:", error);
