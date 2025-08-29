@@ -7,6 +7,8 @@ import NavBar from "../Nav";
 
 const SignIn = () => {
 
+    const [message, setMessage] = useState(""); // Use state for message
+    const [messageType, setMessageType] = useState(""); // Use state for messageType
 
     const [formData, setFormData] = useState({
         name: "",
@@ -24,7 +26,8 @@ const SignIn = () => {
         e.preventDefault(); // prevent page reload
 
         if (formData.password !== formData.confirmPassword) {
-            alert("Passwords do not match!");
+            setMessage("Passwords do not match!");
+            setMessageType("error");
             return;
         }
 
@@ -42,13 +45,16 @@ const SignIn = () => {
 
             const data = await response.json();
             if (response.ok) {
-                alert("Signup successful!");
+                setMessage("Signup successful!");
+                setMessageType("success");
             } else {
-                alert(data.message || "Signup failed");
+                setMessage(data.message || "Signup failed");
+                setMessageType("error")
             }
         } catch (error) {
             console.error("Error:", error);
-            alert("Something went wrong");
+            setMessage("Something went wrong");
+            setMessageType("error")
         }
     };
 
@@ -57,7 +63,7 @@ const SignIn = () => {
 
         <div>
 
-            <NavBar/>
+            <NavBar />
             <div style={styles.form}>
                 <form className="w-50" onSubmit={handleSubmit}>
                     <h1 className="h3 mb-3 fw-normal">Create an Account</h1>
@@ -120,6 +126,8 @@ const SignIn = () => {
                             Sign In
                         </Link>
                     </p>
+
+                    {message && <p style={{ color: messageType === "success" ? "green" : "red" }}>{message}</p>}
                 </form>
             </div>
         </div>

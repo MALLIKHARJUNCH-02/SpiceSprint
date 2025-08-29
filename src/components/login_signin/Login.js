@@ -11,6 +11,7 @@ const LogIn = () => {
         email: "",
         password: ""
     });
+    
     const [message, setMessage] = useState(""); // Use state for message
     const [messageType, setMessageType] = useState(""); // Use state for messageType
 
