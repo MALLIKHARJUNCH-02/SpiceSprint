@@ -24,7 +24,7 @@ const Profile = () => {
 
     const [userName, setUserName] = useState("");
     const [userEmail, setUserEmail] = useState("");
-    
+
     useEffect(() => {
         setUserName(localStorage.getItem("userName") || "");
         setUserEmail(localStorage.getItem("userEmail") || "");
@@ -56,7 +56,7 @@ const Profile = () => {
 
             <div style={styles.ProfileOwner}>
                 <div>
-                    <div style={{...styles.ProfileOwnerImg, fontSize: "150px", fontFamily: "cursive", color: "lightgray"}}>
+                    <div style={{ ...styles.ProfileOwnerImg, fontSize: "150px", fontFamily: "cursive", color: "lightgray" }}>
                         {imgFirst}
                     </div>
 
@@ -126,8 +126,17 @@ const Profile = () => {
 
                         <div style={styles.Email}>
                             <div>
-                                <h6>Email Notifications</h6>
-                                <p>Get updates about your orders</p>
+                                <h6>Preferred Delivery Time</h6>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Delivery Time
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">morning</a></li>
+                                        <li><a class="dropdown-item" href="#">afternoon</a></li>
+                                        <li><a class="dropdown-item" href="#">evening</a></li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div>
@@ -141,8 +150,8 @@ const Profile = () => {
 
                         <div style={styles.Email}>
                             <div>
-                                <h6>Quick Cart Auto-Save</h6>
-                                <p>Automatically save cart items</p>
+                                <h6>Contactless Delivery</h6>
+                                <p>Enjoy safe, no-contact deliveries – orders left at your door</p>
                             </div>
 
                             <div>
