@@ -32,7 +32,7 @@ const Mainstyles = {
         width: '300px'
     },
     cardBackground: {
-        boxShadow: '0px 1px 2px grey',
+        boxShadow: '1px 1px 1px grey',
         margin: '10px',
         borderRadius: '15px',
         width: '19rem'

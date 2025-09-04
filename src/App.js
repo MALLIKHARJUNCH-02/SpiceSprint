@@ -11,7 +11,8 @@ import About from "./components/about/about";
 import Profile from "./components/profile/profile";
 import SplashScreen from "./components/splashscreen/SplashScreen"; // <-- create this
 import ProtectedRoute from "./ProtectedRoute ";
-
+import Deals from "./components/deals/Deals";
+import Cart from "./components/cart/Cart";
 // Main router (your current app)
 function MainApp() {
   return (
@@ -22,6 +23,8 @@ function MainApp() {
         <Route path="/loginsignup" element={<LoginSignup />} />
         <Route path="/signup" element={<SignIn />} />
         <Route path="/about" element={<About />} />
+        <Route path="/deals" element={<Deals />} />
+        <Route path="/cart" element={<Cart/>} />
         <Route
           path="/profile"
           element={

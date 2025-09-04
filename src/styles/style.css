@@ -45,8 +45,13 @@ a {
   text-decoration: none;
 }
 
-.card {
+.cardGrid {
   margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 em {
