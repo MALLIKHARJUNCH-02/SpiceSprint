@@ -18,7 +18,7 @@ const Cart = () => {
             .then(data => setExchangeRate(data.rates.INR))
             .catch(() => setExchangeRate(83)); // fallback if API fails
     }, []);
-    
+
     const loadCart = async () => {
         try {
             const res = await fetch(`${API}/cartProducts`);
@@ -69,7 +69,9 @@ const Cart = () => {
         }
     };
 
-    if (loading) return <p className="text-center m-3">Loading cart…</p>;
+    if (loading) return <p className="text-center m-3">Loading cart… | Please note this web application is hosted on a free backend service,
+        which may cause occasional delays while the server wakes up. Additionally, the backend is still under active development, so some features
+        may not be fully functional yet. Your patience and understanding during this phase are greatly appreciated.</p>;
     if (error) return <p className="text-center text-danger m-3">Error: {error}</p>;
 
     return (

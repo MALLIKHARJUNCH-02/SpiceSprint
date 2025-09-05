@@ -11,7 +11,7 @@ const LogIn = () => {
         email: "",
         password: ""
     });
-    
+
     const [message, setMessage] = useState(""); // Use state for message
     const [messageType, setMessageType] = useState(""); // Use state for messageType
 
@@ -66,9 +66,10 @@ const LogIn = () => {
                 <form className="w-50" onSubmit={handleSubmit}>
                     <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
                     <p style={{ color: 'red' }}>
-                        <strong>Note:</strong> The backend of this web app is still being built. Some features may not
-                        work fully yet as I develop the server and database. Thank you for your patience
-                        and interest in my work.
+                        <strong>Note:</strong> Please note this web application is hosted on a free backend service, 
+                        which may cause occasional delays while the server wakes up. Additionally, the backend is still
+                         under active development, so some features may not be fully functional yet. Your patience and understanding
+                          during this phase are greatly appreciated.
                     </p>
                     <div className="form-floating m-1">
                         <input

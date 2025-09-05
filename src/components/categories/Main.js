@@ -11,16 +11,17 @@ const Main = () => {
             <div>
                 <h2>Shop by Categories</h2>
                 <p>Fresh groceries delivered to your doorstep</p>
-                <p style={{color: 'red'}}><strong> Note:</strong> The backend of this web app is still being built. Some features may not 
-                        work fully yet as I develop the server and database. Thank you for your patience
-                         and interest in my work.</p>
+                <p style={{ color: 'red' }}><strong> Note:</strong> Please note this web application is hosted on a
+                    free backend service, which may cause occasional delays while the server wakes up. Additionally,
+                    the backend is still under active development, so some features may not be fully functional yet.
+                    Your patience and understanding during this phase are greatly appreciated.</p>
             </div>
 
             <div style={styles.categories}>
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/FruitsVegetables" style={styles.card}>
-                        <span style={{...styles.color1, ...styles.span}}>🥕</span>
+                        <span style={{ ...styles.color1, ...styles.span }}>🥕</span>
                         <h3>Fruits & Vegetables</h3>
                         <h4>Fresh & Organic</h4>
 
@@ -30,7 +31,7 @@ const Main = () => {
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/DiaryEggs" style={styles.card}>
-                        <span style={{...styles.color2,...styles.span}}>🥛</span>
+                        <span style={{ ...styles.color2, ...styles.span }}>🥛</span>
                         <h3>Dairy & Eggs</h3>
                         <h4>Farm Fresh</h4>
 
@@ -40,7 +41,7 @@ const Main = () => {
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/meatseafood" style={styles.card}>
-                        <span style={{...styles.color3, ...styles.span}}>🥩</span>
+                        <span style={{ ...styles.color3, ...styles.span }}>🥩</span>
                         <h3>Meat & Seafood</h3>
                         <h4>Premium Quality</h4>
 
@@ -50,7 +51,7 @@ const Main = () => {
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/bakery" style={styles.card}>
-                        <span style={{...styles.color4, ...styles.span}}>🍞</span>
+                        <span style={{ ...styles.color4, ...styles.span }}>🍞</span>
                         <h3>Bakery</h3>
                         <h4>Fresh Baked</h4>
 
@@ -60,7 +61,7 @@ const Main = () => {
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/beverages" style={styles.card}>
-                        <span style={{...styles.color5, ...styles.span}}>🥤</span>
+                        <span style={{ ...styles.color5, ...styles.span }}>🥤</span>
                         <h3>Beverages</h3>
                         <h4>Refreshing Drinks</h4>
 
@@ -70,7 +71,7 @@ const Main = () => {
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/snacks" style={styles.card}>
-                        <span style={{...styles.color6, ...styles.span}}>🍿</span>
+                        <span style={{ ...styles.color6, ...styles.span }}>🍿</span>
                         <h3>Snacks</h3>
                         <h4>Tasty Treats</h4>
 
@@ -80,7 +81,7 @@ const Main = () => {
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/frozenfoods" style={styles.card}>
-                        <span style={{...styles.color7, ...styles.span}}>🧊</span>
+                        <span style={{ ...styles.color7, ...styles.span }}>🧊</span>
                         <h3>Frozen Foods</h3>
                         <h4>Ready to Cook</h4>
 
@@ -90,7 +91,7 @@ const Main = () => {
 
                 <div style={styles.cardBackground} className="card">
                     <a href="/household" style={styles.card}>
-                        <span style={{...styles.color8, ...styles.span}}>🧽</span>
+                        <span style={{ ...styles.color8, ...styles.span }}>🧽</span>
                         <h3>Household</h3>
                         <h4>Daily Essentials</h4>
 
