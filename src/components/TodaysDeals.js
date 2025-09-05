@@ -30,7 +30,6 @@ const TodaysDeals = () => {
                                         <span>
                                             {p.price} <em>{p.actualPrice}</em>
                                         </span>
-                                        <a href="#" className="btn btn-primary">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
