@@ -3,10 +3,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./DealsStyles.js";
 import NavBar from "../Nav.js";
 import ProductsData from "../../data/products.js";
+import { useEffect, useState } from "react";
 
 const API = "https://spicesprintproductsdata.onrender.com";
 
 const Deals = () => {
+
+    const [buttonTexts, setButtonTexts] = useState({});
+
+    const [exchangeRate, setExchangeRate] = useState(83);
+    useEffect(() => {
+        fetch("https://api.exchangerate.host/latest?base=USD&symbols=INR")
+            .then(res => res.json())
+            .then(data => setExchangeRate(data.rates.INR))
+            .catch(() => setExchangeRate(83)); // fallback if API fails
+    }, []);
+
     const handleClick = async (product) => {
         try {
             const resFind = await fetch(`${API}/cartProducts?productId=${product.id}`);
@@ -41,6 +53,11 @@ const Deals = () => {
                     body: JSON.stringify(cartItem)
                 });
                 if (!resPost.ok) throw new Error("Post failed");
+
+                setButtonTexts((prev) => ({
+                    ...prev,
+                    [product.id]: "✅ Added"
+                }));
             }
 
         } catch (err) {
@@ -62,15 +79,18 @@ const Deals = () => {
                 <div className="cardGrid">
                     {ProductsData.filter(p => p.type === "Deals").map((p) => (
                         <div key={p.id} className="card" style={{ width: "300px" }}>
-                            <img src={p.imagePath} className="card-img-top" alt={p.productName} />
+                            <img src={p.imagePath} className="card-img-top" style={{ width: "100%", height: "200px" }} alt={p.productName} />
                             <div className="card-body">
                                 <h5 className="card-title">{p.productName}</h5>
                                 <p className="card-text">{p.productInfo}</p>
                                 <div style={styles.cart}>
                                     <span style={styles.discount}>{p.discount}%</span>
-                                    <span>{p.price} <em>{p.actualPrice}</em></span>
+                                    <span>
+                                        ₹{(p.price * exchangeRate).toFixed(2)} | <em>{(p.actualPrice * exchangeRate).toFixed(2)}</em>
+                                    </span>
+
                                     <button type="button" className="btn btn-primary" onClick={() => handleClick(p)}>
-                                        Add to Cart
+                                        {buttonTexts[p.id] || "Add to Cart"}
                                     </button>
                                 </div>
                             </div>

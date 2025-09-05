@@ -21,7 +21,7 @@ const TodaysDeals = () => {
                         .slice(0, 3)
                         .map((p) => (
                             <div key={p.id} className="card" style={{ width: "300px" }}>
-                                <img src={p.imagePath} className="card-img-top" alt={p.productName} />
+                                <img src={p.imagePath} className="card-img-top" style={{width: "100%", height: "200px"}} alt={p.productName} />
                                 <div className="card-body">
                                     <h5 className="card-title">{p.productName}</h5>
                                     <p className="card-text">{p.productInfo}</p>

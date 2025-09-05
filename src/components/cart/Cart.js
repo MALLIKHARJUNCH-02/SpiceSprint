@@ -81,7 +81,7 @@ const Cart = () => {
                     {items.length === 0 && <p className="m-3">Cart is empty.</p>}
                     {items.map((p) => (
                         <div key={p.id} className="card" style={{ width: "300px" }}>
-                            <img src={p.imagePath} className="card-img-top" alt={p.productName || 'Product'} />
+                            <img src={p.imagePath} className="card-img-top" style={{width: "100%", height: "200px"}} alt={p.productName || 'Product'} />
                             <div className="card-body">
                                 <h5 className="card-title">{p.productName}</h5>
                                 <p className="card-text">{p.productInfo}</p>

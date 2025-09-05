@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     type: "Deals",
-    imagePath: "/images/apple.jpg",
+    imagePath: "/images/apple.jpeg",
     productName: "Fresh Red Apples",
     productInfo: "Crisp and juicy red apples, packed with vitamins.",
     discount: 10, // in percentage
@@ -12,7 +12,7 @@ const products = [
   {
     id: 2,
     type: "Deals",
-    imagePath: "/images/banana.jpg",
+    imagePath: "/images/banana.jpeg",
     productName: "Organic Bananas",
     productInfo: "Sweet and ripe organic bananas, perfect for snacks.",
     discount: 15,
@@ -22,7 +22,7 @@ const products = [
   {
     id: 3,
     type: "Deals",
-    imagePath: "/images/bread.jpg",
+    imagePath: "/images/bread.jpeg",
     productName: "Whole Wheat Bread",
     productInfo: "Freshly baked whole wheat bread with high fiber.",
     discount: 5,
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     type: "Deals",
-    imagePath: "/images/milk.jpg",
+    imagePath: "/images/milk.jpeg",
     productName: "2% Milk",
     productInfo: "Pasteurized 2% milk in a 1 gallon container.",
     discount: 8,
@@ -42,7 +42,7 @@ const products = [
   {
     id: 5,
     type: "Deals",
-    imagePath: "/images/eggs.jpg",
+    imagePath: "/images/eggs.jpeg",
     productName: "Free-Range Eggs",
     productInfo: "One dozen large free-range eggs, rich in omega-3.",
     discount: 12,
@@ -52,7 +52,7 @@ const products = [
   {
     id: 6,
     type: "Deals",
-    imagePath: "/images/rice.jpg",
+    imagePath: "/images/rice.jpeg",
     productName: "Basmati Rice",
     productInfo: "Premium aged basmati rice with long grains.",
     discount: 20,
@@ -62,7 +62,7 @@ const products = [
   {
     id: 7,
     type: "Deals",
-    imagePath: "/images/chicken.jpg",
+    imagePath: "/images/chicken.jpeg",
     productName: "Chicken Breast",
     productInfo: "Boneless, skinless chicken breast packs of 1 lb.",
     discount: 7,
@@ -72,7 +72,7 @@ const products = [
   {
     id: 8,
     type: "Deals",
-    imagePath: "/images/tomato.jpg",
+    imagePath: "/images/tomato.jpeg",
     productName: "Vine Tomatoes",
     productInfo: "Fresh vine tomatoes, perfect for salads and cooking.",
     discount: 10,
@@ -82,7 +82,7 @@ const products = [
   {
     id: 9,
     type: "Deals",
-    imagePath: "/images/yogurt.jpg",
+    imagePath: "/images/yogurt.jpeg",
     productName: "Greek Yogurt",
     productInfo: "Creamy plain Greek yogurt, rich in protein.",
     discount: 15,
@@ -92,7 +92,7 @@ const products = [
   {
     id: 10,
     type: "Deals",
-    imagePath: "/images/cheese.jpg",
+    imagePath: "/images/cheese.jpeg",
     productName: "Cheddar Cheese",
     productInfo: "Aged cheddar cheese block for grilling and snacks.",
     discount: 8,
@@ -102,7 +102,7 @@ const products = [
   {
     id: 11,
     type: "Deals",
-    imagePath: "/images/oranges.jpg",
+    imagePath: "/images/oranges.jpeg",
     productName: "Navel Oranges",
     productInfo: "Sweet and tangy navel oranges, perfect for juicing.",
     discount: 18,
@@ -112,7 +112,7 @@ const products = [
   {
     id: 12,
     type: "Deals",
-    imagePath: "/images/pasta.jpg",
+    imagePath: "/images/pasta.jpeg",
     productName: "Spaghetti Pasta",
     productInfo: "Durum wheat spaghetti pasta, quick cooking.",
     discount: 10,
@@ -122,7 +122,7 @@ const products = [
   {
     id: 13,
     type: "Deals",
-    imagePath: "/images/butter.jpg",
+    imagePath: "/images/butter.jpeg",
     productName: "Salted Butter",
     productInfo: "Creamy salted butter in 1 lb packs.",
     discount: 5,
@@ -132,7 +132,7 @@ const products = [
   {
     id: 14,
     type: "Deals",
-    imagePath: "/images/lettuce.jpg",
+    imagePath: "/images/lettuce.jpeg",
     productName: "Romaine Lettuce",
     productInfo: "Fresh crisp romaine lettuce heads.",
     discount: 12,
@@ -142,17 +142,17 @@ const products = [
   {
     id: 15,
     type: "Deals",
-    imagePath: "/images/coffee.jpg",
+    imagePath: "/images/coffee.jpeg",
     productName: "Ground Coffee",
     productInfo: "Medium roast ground coffee, 12 oz pack.",
     discount: 10,
     price: 6.30,
     actualPrice: 7.00
   },
- {
+  {
     id: 16,
     type: "Categories",
-    imagePath: "/images/banana.jpg",
+    imagePath: "/images/banana.jpeg",
     productName: "Bananas",
     productInfo: "Fresh ripe bananas, rich in potassium.",
     discount: 5,
@@ -162,7 +162,7 @@ const products = [
   {
     id: 17,
     type: "Categories",
-    imagePath: "/images/carrot.jpg",
+    imagePath: "/images/carrot.jpeg",
     productName: "Carrots",
     productInfo: "Crunchy orange carrots, perfect for salads and cooking.",
     discount: 8,
@@ -172,7 +172,7 @@ const products = [
   {
     id: 18,
     type: "Categories",
-    imagePath: "/images/tomato.jpg",
+    imagePath: "/images/tomato.jpeg",
     productName: "Tomatoes",
     productInfo: "Juicy red tomatoes, great for sauces and salads.",
     discount: 10,
@@ -182,7 +182,7 @@ const products = [
   {
     id: 19,
     type: "Categories",
-    imagePath: "/images/lettuce.jpg",
+    imagePath: "/images/lettuce.jpeg",
     productName: "Lettuce",
     productInfo: "Fresh green lettuce for your salads.",
     discount: 7,
@@ -192,7 +192,7 @@ const products = [
   {
     id: 20,
     type: "Categories",
-    imagePath: "/images/apple.jpg",
+    imagePath: "/images/apple.jpeg",
     productName: "Red Apples",
     productInfo: "Crisp and sweet red apples, good for snacking.",
     discount: 12,
@@ -202,7 +202,7 @@ const products = [
   {
     id: 21,
     type: "Categories",
-    imagePath: "/images/onion.jpg",
+    imagePath: "/images/onion.jpeg",
     productName: "Onions",
     productInfo: "Fresh onions, ideal for cooking and flavoring.",
     discount: 5,
@@ -212,7 +212,7 @@ const products = [
   {
     id: 22,
     type: "Categories",
-    imagePath: "/images/potato.jpg",
+    imagePath: "/images/potato.jpeg",
     productName: "Potatoes",
     productInfo: "Versatile russet potatoes for all your cooking needs.",
     discount: 8,
@@ -222,7 +222,7 @@ const products = [
   {
     id: 23,
     type: "Categories",
-    imagePath: "/images/orange.jpg",
+    imagePath: "/images/oranges.jpeg",
     productName: "Oranges",
     productInfo: "Juicy oranges, perfect for fresh juice.",
     discount: 10,
@@ -232,7 +232,7 @@ const products = [
   {
     id: 24,
     type: "Categories",
-    imagePath: "/images/broccoli.jpg",
+    imagePath: "/images/broccoli.jpeg",
     productName: "Broccoli",
     productInfo: "Fresh green broccoli heads, packed with nutrients.",
     discount: 7,
@@ -249,10 +249,10 @@ const products = [
     price: 3.80,
     actualPrice: 4.00
   },
- {
+  {
     id: 26,
     type: "Categories",
-    imagePath: "/images/milk.jpg",
+    imagePath: "/images/whole_milk.jpeg",
     productName: "Whole Milk",
     productInfo: "Fresh whole milk, rich and creamy.",
     discount: 6,
@@ -262,7 +262,7 @@ const products = [
   {
     id: 27,
     type: "Categories",
-    imagePath: "/images/cheese.jpg",
+    imagePath: "/images/cheddar_cheese.jpeg",
     productName: "Cheddar Cheese",
     productInfo: "Aged cheddar cheese block for cooking and snacks.",
     discount: 8,
@@ -272,7 +272,7 @@ const products = [
   {
     id: 28,
     type: "Categories",
-    imagePath: "/images/butter.jpg",
+    imagePath: "/images/butter.jpeg",
     productName: "Salted Butter",
     productInfo: "Creamy salted butter in 1 lb packs.",
     discount: 5,
@@ -282,7 +282,7 @@ const products = [
   {
     id: 29,
     type: "Categories",
-    imagePath: "/images/cream.jpg",
+    imagePath: "/images/cream.jpeg",
     productName: "Heavy Cream",
     productInfo: "Rich heavy cream ideal for cooking and desserts.",
     discount: 7,
@@ -292,7 +292,7 @@ const products = [
   {
     id: 30,
     type: "Categories",
-    imagePath: "/images/freedrange-eggs.jpg",
+    imagePath: "/images/freedrange-eggs.jpeg",
     productName: "Free-Range Eggs",
     productInfo: "One dozen large free-range eggs.",
     discount: 10,
@@ -302,7 +302,7 @@ const products = [
   {
     id: 31,
     type: "Categories",
-    imagePath: "/images/chicken-breast.jpg",
+    imagePath: "/images/chicken.jpeg",
     productName: "Chicken Breast",
     productInfo: "Boneless, skinless chicken breasts, fresh and lean.",
     discount: 7,
@@ -312,7 +312,7 @@ const products = [
   {
     id: 32,
     type: "Categories",
-    imagePath: "/images/salmon.jpg",
+    imagePath: "/images/salmon.jpeg",
     productName: "Atlantic Salmon",
     productInfo: "Fresh Atlantic salmon fillets, rich in omega-3.",
     discount: 10,
@@ -322,9 +322,9 @@ const products = [
   {
     id: 33,
     type: "Categories",
-    imagePath: "/images/ground-beef.jpg",
-    productName: "Ground Beef",
-    productInfo: "Grass-fed ground beef, fresh and lean.",
+    imagePath: "/images/tuna.jpeg",
+    productName: "Yellowfin Tuna",
+    productInfo: "Lean tuna steaks, great for searing or sushi.",
     discount: 8,
     price: 6.90,
     actualPrice: 7.50
@@ -332,7 +332,7 @@ const products = [
   {
     id: 34,
     type: "Categories",
-    imagePath: "/images/shrimp.jpg",
+    imagePath: "/images/shrimp.jpeg",
     productName: "Medium Shrimp",
     productInfo: "Wild-caught medium-sized shrimp, peeled and deveined.",
     discount: 12,
@@ -342,17 +342,17 @@ const products = [
   {
     id: 35,
     type: "Categories",
-    imagePath: "/images/pork-chops.jpg",
+    imagePath: "/images/pork-chops.jpeg",
     productName: "Pork Chops",
     productInfo: "Fresh pork chops, perfect for grilling and roasting.",
     discount: 5,
     price: 4.75,
     actualPrice: 5.00
   },
-{
+  {
     id: 36,
     type: "Categories",
-    imagePath: "/images/white-bread.jpg",
+    imagePath: "/images/white-bread.jpeg",
     productName: "White Bread",
     productInfo: "Soft and fluffy white sandwich bread.",
     discount: 6,
@@ -362,7 +362,7 @@ const products = [
   {
     id: 37,
     type: "Categories",
-    imagePath: "/images/croissant.jpg",
+    imagePath: "/images/croissant.jpeg",
     productName: "Butter Croissant",
     productInfo: "Flaky and buttery croissant, freshly baked.",
     discount: 8,
@@ -372,7 +372,7 @@ const products = [
   {
     id: 38,
     type: "Categories",
-    imagePath: "/images/muffin.jpg",
+    imagePath: "/images/muffin.jpeg",
     productName: "Blueberry Muffin",
     productInfo: "Moist blueberry muffin with real berries.",
     discount: 10,
@@ -382,7 +382,7 @@ const products = [
   {
     id: 39,
     type: "Categories",
-    imagePath: "/images/baguette.jpg",
+    imagePath: "/images/baguette.jpeg",
     productName: "French Baguette",
     productInfo: "Crispy crust French baguette, perfect for sandwiches.",
     discount: 7,
@@ -392,17 +392,17 @@ const products = [
   {
     id: 40,
     type: "Categories",
-    imagePath: "/images/danish.jpg",
+    imagePath: "/images/danish.jpeg",
     productName: "Danish Pastry",
     productInfo: "Sweet Danish pastry with fruit filling.",
     discount: 5,
     price: 1.80,
     actualPrice: 1.90,
   },
- {
+  {
     id: 41,
     type: "Categories",
-    imagePath: "/images/cola.jpg",
+    imagePath: "/images/cola.jpeg",
     productName: "Cola Drink",
     productInfo: "Classic cola soda, 12 oz can.",
     discount: 10,
@@ -412,7 +412,7 @@ const products = [
   {
     id: 42,
     type: "Categories",
-    imagePath: "/images/green-tea.jpg",
+    imagePath: "/images/green-tea.jpeg",
     productName: "Green Tea",
     productInfo: "Organic green tea bags, 20 count.",
     discount: 15,
@@ -422,7 +422,7 @@ const products = [
   {
     id: 43,
     type: "Categories",
-    imagePath: "/images/orange-juice.jpg",
+    imagePath: "/images/orange-juice.jpeg",
     productName: "Orange Juice",
     productInfo: "Freshly squeezed orange juice, 1 liter.",
     discount: 8,
@@ -432,7 +432,7 @@ const products = [
   {
     id: 44,
     type: "Categories",
-    imagePath: "/images/coffee.jpg",
+    imagePath: "/images/coffee.jpeg",
     productName: "Ground Coffee",
     productInfo: "Medium roast ground coffee, 12 oz pack.",
     discount: 10,
@@ -442,17 +442,17 @@ const products = [
   {
     id: 45,
     type: "Categories",
-    imagePath: "/images/mineral-water.jpg",
+    imagePath: "/images/mineral-water.jpeg",
     productName: "Mineral Water",
     productInfo: "Natural mineral water, 1 liter bottle.",
     discount: 5,
     price: 1.10,
     actualPrice: 1.15,
   },
-{
+  {
     id: 46,
     type: "Categories",
-    imagePath: "/images/chips.jpg",
+    imagePath: "/images/chips.jpeg",
     productName: "Potato Chips",
     productInfo: "Salted crispy potato chips, 200g bag.",
     discount: 12,
@@ -462,7 +462,7 @@ const products = [
   {
     id: 47,
     type: "Categories",
-    imagePath: "/images/popcorn.jpg",
+    imagePath: "/images/popcorn.jpeg",
     productName: "Butter Popcorn",
     productInfo: "Microwave butter popcorn, 3 pack.",
     discount: 15,
@@ -472,7 +472,7 @@ const products = [
   {
     id: 48,
     type: "Categories",
-    imagePath: "/images/nuts.jpg",
+    imagePath: "/images/nuts.jpeg",
     productName: "Mixed Nuts",
     productInfo: "Salted mixed nuts, 250g pack.",
     discount: 8,
@@ -482,27 +482,27 @@ const products = [
   {
     id: 49,
     type: "Categories",
-    imagePath: "/images/cookies.jpg",
+    imagePath: "/images/cookies.jpeg",
     productName: "Chocolate Cookies",
     productInfo: "Crunchy chocolate chip cookies, 300g pack.",
     discount: 10,
     price: 3.60,
     actualPrice: 4.00,
   },
-{
+  {
     id: 50,
     type: "Categories",
-    imagePath: "/images/granola-bars.jpg",
+    imagePath: "/images/granola-bars.jpeg",
     productName: "Granola Bars",
     productInfo: "Healthy granola bars with oats and honey, 6 pack.",
     discount: 7,
     price: 5.90,
     actualPrice: 6.35,
   },
-{
+  {
     id: 51,
     type: "Categories",
-    imagePath: "/images/frozen-pizza.jpg",
+    imagePath: "/images/frozen-pizza.jpeg",
     productName: "Frozen Pizza",
     productInfo: "Pepperoni frozen pizza, ready to bake.",
     discount: 12,
@@ -512,7 +512,7 @@ const products = [
   {
     id: 52,
     type: "Categories",
-    imagePath: "/images/frozen-veggies.jpg",
+    imagePath: "/images/frozen-veggies.jpeg",
     productName: "Frozen Mixed Vegetables",
     productInfo: "Assorted frozen veggies, 500g bag.",
     discount: 10,
@@ -522,7 +522,7 @@ const products = [
   {
     id: 53,
     type: "Categories",
-    imagePath: "/images/frozen-fries.jpg",
+    imagePath: "/images/frozen-fries.jpeg",
     productName: "Frozen French Fries",
     productInfo: "Crispy frozen shoestring fries, 1 kg bag.",
     discount: 8,
@@ -532,7 +532,7 @@ const products = [
   {
     id: 54,
     type: "Categories",
-    imagePath: "/images/frozen-dinners.jpg",
+    imagePath: "/images/frozen-dinners.jpeg",
     productName: "Frozen Dinners",
     productInfo: "Frozen ready-to-eat meals, assorted flavors.",
     discount: 10,
@@ -542,17 +542,17 @@ const products = [
   {
     id: 55,
     type: "Categories",
-    imagePath: "/images/ice-cream.jpg",
+    imagePath: "/images/ice-cream.jpeg",
     productName: "Vanilla Ice Cream",
     productInfo: "Creamy vanilla ice cream, 1 liter tub.",
     discount: 7,
     price: 4.50,
     actualPrice: 4.85,
   },
-{
+  {
     id: 56,
     type: "Categories",
-    imagePath: "/images/laundry-detergent.jpg",
+    imagePath: "/images/laundry-detergent.jpeg",
     productName: "Laundry Detergent",
     productInfo: "High-efficiency laundry detergent, 2 liters.",
     discount: 10,
@@ -572,7 +572,7 @@ const products = [
   {
     id: 58,
     type: "Categories",
-    imagePath: "/images/garbage-bags.jpg",
+    imagePath: "/images/garbage-bags.jpeg",
     productName: "Garbage Bags",
     productInfo: "Heavy-duty 30-gallon garbage bags, 20 count.",
     discount: 8,
@@ -582,7 +582,7 @@ const products = [
   {
     id: 59,
     type: "Categories",
-    imagePath: "/images/toilet-paper.jpg",
+    imagePath: "/images/toilet-paper.jpeg",
     productName: "Toilet Paper",
     productInfo: "Soft and strong toilet paper, 12 rolls pack.",
     discount: 5,
@@ -592,7 +592,7 @@ const products = [
   {
     id: 60,
     type: "Categories",
-    imagePath: "/images/dish-soap.jpg",
+    imagePath: "/images/dish-soap.jpeg",
     productName: "Dish Soap",
     productInfo: "Concentrated dish soap with lemon scent, 750ml.",
     discount: 7,
