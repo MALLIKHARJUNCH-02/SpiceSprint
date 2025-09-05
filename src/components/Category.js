@@ -15,26 +15,34 @@ const Category = () => {
 
             <div style={styles.categories}>
 
-                <div style={styles.categorybackground} className="onHover">
-                    <span>🍎</span>
-                    <p>Fresh Produce</p>
-                    <p>Fruits & Vegetables</p>
-                </div>
-                <div style={styles.categorybackground} className="onHover">
-                    <span>🥛</span>
-                    <p>Dairy & Eggs</p>
-                    <p>Milk, Cheese & More</p>
-                </div>
-                <div style={styles.categorybackground} className="onHover">
-                    <span>🥩</span>
-                    <p>Meat & Seafood</p>
-                    <p>Fresh & Frozen</p>
-                </div>
-                <div style={styles.categorybackground} className="onHover">
-                    <span>🍞</span>
-                    <p>Bakery</p>
-                    <p>Fresh Bread & Pastries</p>
-                </div>
+                <a href="/FruitsVegetables" style={styles.categorybackground} className="onHover">
+                    <div>
+                        <span>🍎</span>
+                        <p style={{color: "black"}}>Fresh Produce</p>
+                        <p style={{color: "black"}}>Fruits & Vegetables</p>
+                    </div>
+                </a>
+                <a href="/DiaryEggs" style={styles.categorybackground} className="onHover">
+                    <div >
+                        <span>🥛</span>
+                        <p style={{color: "black"}}>Dairy & Eggs</p>
+                        <p style={{color: "black"}}>Milk, Cheese & More</p>
+                    </div>
+                </a>
+                <a href="/meatseafood" style={styles.categorybackground} className="onHover">
+                    <div>
+                        <span>🥩</span>
+                        <p style={{color: "black"}}>Meat & Seafood</p>
+                        <p style={{color: "black"}}>Fresh & Frozen</p>
+                    </div>
+                </a>
+                <a href="/bakery" style={styles.categorybackground} className="onHover">
+                    <div>
+                        <span>🍞</span>
+                        <p style={{color: "black"}}>Bakery</p>
+                        <p style={{color: "black"}}>Fresh Bread & Pastries</p>
+                    </div>
+                </a>
 
             </div>
         </div>

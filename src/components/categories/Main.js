@@ -109,25 +109,25 @@ const Main = () => {
 
                 <div style={styles.actionsButtons}>
 
-                    <button style={styles.buttons} type="button" class="btn btn-outline-primary m-4">
+                    <a href="/deals" style={styles.buttons} type="button" class="btn btn-outline-primary m-4">
                         <span style={styles.span}>🏷️</span>
                         <h3>Today's Deals</h3>
-                    </button>
+                    </a>
 
-                    <button style={styles.buttons} type="button" class="btn btn-outline-info m-4">
+                    <a style={styles.buttons} type="button" class="btn btn-outline-info m-4">
                         <span style={styles.span}>❤️</span>
                         <h3>Favorites</h3>
-                    </button>
+                    </a>
 
-                    <button style={styles.buttons} type="button" class="btn btn-outline-warning m-4">
+                    <a style={styles.buttons} type="button" class="btn btn-outline-warning m-4">
                         <span style={styles.span}>📦</span>
                         <h3>My Orders</h3>
-                    </button>
+                    </a>
 
-                    <button style={styles.buttons} type="button" class="btn btn-outline-success m-4">
+                    <a style={styles.buttons} type="button" class="btn btn-outline-success m-4">
                         <span style={styles.span}>👨‍🍳</span>
                         <h3>Recipes</h3>
-                    </button>
+                    </a>
 
                 </div>
             </div>
