@@ -13,6 +13,14 @@ import SplashScreen from "./components/splashscreen/SplashScreen"; // <-- create
 import ProtectedRoute from "./ProtectedRoute ";
 import Deals from "./components/deals/Deals";
 import Cart from "./components/cart/Cart";
+import FruitsAndVegetables from "./components/FruitsAndVegetables/Main";
+import DairyEggs from "./components/DairyAndEggs/Main";
+import MeatAndSeafood from "./components/MeatAndSeafood/Main";
+import Bakery from "./components/Bakery/Main";
+import Beverages from "./components/Beverages/Main";
+import Snacks from "./components/Snacks/Main";
+import FrozenFoods from "./components/FrozenFoods/Main";
+import Household from "./components/Household/Main";
 // Main router (your current app)
 function MainApp() {
   return (
@@ -25,6 +33,14 @@ function MainApp() {
         <Route path="/about" element={<About />} />
         <Route path="/deals" element={<Deals />} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path="/FruitsVegetables" element={<FruitsAndVegetables/>} />
+        <Route path="/DiaryEggs" element={<DairyEggs/>} />
+        <Route path="/meatseafood" element={<MeatAndSeafood/>} />
+        <Route path="/bakery" element={<Bakery/>} />
+        <Route path="/beverages" element={<Beverages/>} />
+        <Route path="/snacks" element={<Snacks/>} />
+        <Route path="/frozenfoods" element={<FrozenFoods/>} />
+        <Route path="/household" element={<Household/>} />
         <Route
           path="/profile"
           element={

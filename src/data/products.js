@@ -151,7 +151,7 @@ const products = [
   },
   {
     id: 16,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/banana.jpeg",
     productName: "Bananas",
     productInfo: "Fresh ripe bananas, rich in potassium.",
@@ -161,7 +161,7 @@ const products = [
   },
   {
     id: 17,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/carrot.jpeg",
     productName: "Carrots",
     productInfo: "Crunchy orange carrots, perfect for salads and cooking.",
@@ -171,7 +171,7 @@ const products = [
   },
   {
     id: 18,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/tomato.jpeg",
     productName: "Tomatoes",
     productInfo: "Juicy red tomatoes, great for sauces and salads.",
@@ -181,7 +181,7 @@ const products = [
   },
   {
     id: 19,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/lettuce.jpeg",
     productName: "Lettuce",
     productInfo: "Fresh green lettuce for your salads.",
@@ -191,7 +191,7 @@ const products = [
   },
   {
     id: 20,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/apple.jpeg",
     productName: "Red Apples",
     productInfo: "Crisp and sweet red apples, good for snacking.",
@@ -201,7 +201,7 @@ const products = [
   },
   {
     id: 21,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/onion.jpeg",
     productName: "Onions",
     productInfo: "Fresh onions, ideal for cooking and flavoring.",
@@ -211,7 +211,7 @@ const products = [
   },
   {
     id: 22,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/potato.jpeg",
     productName: "Potatoes",
     productInfo: "Versatile russet potatoes for all your cooking needs.",
@@ -221,7 +221,7 @@ const products = [
   },
   {
     id: 23,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/oranges.jpeg",
     productName: "Oranges",
     productInfo: "Juicy oranges, perfect for fresh juice.",
@@ -231,7 +231,7 @@ const products = [
   },
   {
     id: 24,
-    type: "Categories",
+    type: "Fruits_Vegetables",
     imagePath: "/images/broccoli.jpeg",
     productName: "Broccoli",
     productInfo: "Fresh green broccoli heads, packed with nutrients.",
@@ -241,8 +241,8 @@ const products = [
   },
   {
     id: 25,
-    type: "Categories",
-    imagePath: "/images/peppers.jpg",
+    type: "Fruits_Vegetables",
+    imagePath: "/images/peppers.jpeg",
     productName: "Bell Peppers",
     productInfo: "Colorful bell peppers, perfect for salads and cooking.",
     discount: 5,
@@ -251,7 +251,7 @@ const products = [
   },
   {
     id: 26,
-    type: "Categories",
+    type: "Dairy_Eggs",
     imagePath: "/images/whole_milk.jpeg",
     productName: "Whole Milk",
     productInfo: "Fresh whole milk, rich and creamy.",
@@ -261,7 +261,7 @@ const products = [
   },
   {
     id: 27,
-    type: "Categories",
+    type: "Dairy_Eggs",
     imagePath: "/images/cheddar_cheese.jpeg",
     productName: "Cheddar Cheese",
     productInfo: "Aged cheddar cheese block for cooking and snacks.",
@@ -271,7 +271,7 @@ const products = [
   },
   {
     id: 28,
-    type: "Categories",
+    type: "Dairy_Eggs",
     imagePath: "/images/butter.jpeg",
     productName: "Salted Butter",
     productInfo: "Creamy salted butter in 1 lb packs.",
@@ -281,7 +281,7 @@ const products = [
   },
   {
     id: 29,
-    type: "Categories",
+    type: "Dairy_Eggs",
     imagePath: "/images/cream.jpeg",
     productName: "Heavy Cream",
     productInfo: "Rich heavy cream ideal for cooking and desserts.",
@@ -291,7 +291,7 @@ const products = [
   },
   {
     id: 30,
-    type: "Categories",
+    type: "Dairy_Eggs",
     imagePath: "/images/freedrange-eggs.jpeg",
     productName: "Free-Range Eggs",
     productInfo: "One dozen large free-range eggs.",
@@ -301,7 +301,7 @@ const products = [
   },
   {
     id: 31,
-    type: "Categories",
+    type: "Meat_Seafood",
     imagePath: "/images/chicken.jpeg",
     productName: "Chicken Breast",
     productInfo: "Boneless, skinless chicken breasts, fresh and lean.",
@@ -311,7 +311,7 @@ const products = [
   },
   {
     id: 32,
-    type: "Categories",
+    type: "Meat_Seafood",
     imagePath: "/images/salmon.jpeg",
     productName: "Atlantic Salmon",
     productInfo: "Fresh Atlantic salmon fillets, rich in omega-3.",
@@ -321,7 +321,7 @@ const products = [
   },
   {
     id: 33,
-    type: "Categories",
+    type: "Meat_Seafood",
     imagePath: "/images/tuna.jpeg",
     productName: "Yellowfin Tuna",
     productInfo: "Lean tuna steaks, great for searing or sushi.",
@@ -331,7 +331,7 @@ const products = [
   },
   {
     id: 34,
-    type: "Categories",
+    type: "Meat_Seafood",
     imagePath: "/images/shrimp.jpeg",
     productName: "Medium Shrimp",
     productInfo: "Wild-caught medium-sized shrimp, peeled and deveined.",
@@ -341,7 +341,7 @@ const products = [
   },
   {
     id: 35,
-    type: "Categories",
+    type: "Meat_Seafood",
     imagePath: "/images/pork-chops.jpeg",
     productName: "Pork Chops",
     productInfo: "Fresh pork chops, perfect for grilling and roasting.",
@@ -351,7 +351,7 @@ const products = [
   },
   {
     id: 36,
-    type: "Categories",
+    type: "Bakery",
     imagePath: "/images/white-bread.jpeg",
     productName: "White Bread",
     productInfo: "Soft and fluffy white sandwich bread.",
@@ -361,7 +361,7 @@ const products = [
   },
   {
     id: 37,
-    type: "Categories",
+    type: "Bakery",
     imagePath: "/images/croissant.jpeg",
     productName: "Butter Croissant",
     productInfo: "Flaky and buttery croissant, freshly baked.",
@@ -371,7 +371,7 @@ const products = [
   },
   {
     id: 38,
-    type: "Categories",
+    type: "Bakery",
     imagePath: "/images/muffin.jpeg",
     productName: "Blueberry Muffin",
     productInfo: "Moist blueberry muffin with real berries.",
@@ -381,7 +381,7 @@ const products = [
   },
   {
     id: 39,
-    type: "Categories",
+    type: "Bakery",
     imagePath: "/images/baguette.jpeg",
     productName: "French Baguette",
     productInfo: "Crispy crust French baguette, perfect for sandwiches.",
@@ -391,7 +391,7 @@ const products = [
   },
   {
     id: 40,
-    type: "Categories",
+    type: "Bakery",
     imagePath: "/images/danish.jpeg",
     productName: "Danish Pastry",
     productInfo: "Sweet Danish pastry with fruit filling.",
@@ -401,7 +401,7 @@ const products = [
   },
   {
     id: 41,
-    type: "Categories",
+    type: "Beverages",
     imagePath: "/images/cola.jpeg",
     productName: "Cola Drink",
     productInfo: "Classic cola soda, 12 oz can.",
@@ -411,7 +411,7 @@ const products = [
   },
   {
     id: 42,
-    type: "Categories",
+    type: "Beverages",
     imagePath: "/images/green-tea.jpeg",
     productName: "Green Tea",
     productInfo: "Organic green tea bags, 20 count.",
@@ -421,7 +421,7 @@ const products = [
   },
   {
     id: 43,
-    type: "Categories",
+    type: "Beverages",
     imagePath: "/images/orange-juice.jpeg",
     productName: "Orange Juice",
     productInfo: "Freshly squeezed orange juice, 1 liter.",
@@ -431,7 +431,7 @@ const products = [
   },
   {
     id: 44,
-    type: "Categories",
+    type: "Beverages",
     imagePath: "/images/coffee.jpeg",
     productName: "Ground Coffee",
     productInfo: "Medium roast ground coffee, 12 oz pack.",
@@ -441,7 +441,7 @@ const products = [
   },
   {
     id: 45,
-    type: "Categories",
+    type: "Beverages",
     imagePath: "/images/mineral-water.jpeg",
     productName: "Mineral Water",
     productInfo: "Natural mineral water, 1 liter bottle.",
@@ -451,7 +451,7 @@ const products = [
   },
   {
     id: 46,
-    type: "Categories",
+    type: "Snacks",
     imagePath: "/images/chips.jpeg",
     productName: "Potato Chips",
     productInfo: "Salted crispy potato chips, 200g bag.",
@@ -461,7 +461,7 @@ const products = [
   },
   {
     id: 47,
-    type: "Categories",
+    type: "Snacks",
     imagePath: "/images/popcorn.jpeg",
     productName: "Butter Popcorn",
     productInfo: "Microwave butter popcorn, 3 pack.",
@@ -471,7 +471,7 @@ const products = [
   },
   {
     id: 48,
-    type: "Categories",
+    type: "Snacks",
     imagePath: "/images/nuts.jpeg",
     productName: "Mixed Nuts",
     productInfo: "Salted mixed nuts, 250g pack.",
@@ -481,7 +481,7 @@ const products = [
   },
   {
     id: 49,
-    type: "Categories",
+    type: "Snacks",
     imagePath: "/images/cookies.jpeg",
     productName: "Chocolate Cookies",
     productInfo: "Crunchy chocolate chip cookies, 300g pack.",
@@ -491,7 +491,7 @@ const products = [
   },
   {
     id: 50,
-    type: "Categories",
+    type: "Snacks",
     imagePath: "/images/granola-bars.jpeg",
     productName: "Granola Bars",
     productInfo: "Healthy granola bars with oats and honey, 6 pack.",
@@ -501,7 +501,7 @@ const products = [
   },
   {
     id: 51,
-    type: "Categories",
+    type: "Frozen_Foods",
     imagePath: "/images/frozen-pizza.jpeg",
     productName: "Frozen Pizza",
     productInfo: "Pepperoni frozen pizza, ready to bake.",
@@ -511,7 +511,7 @@ const products = [
   },
   {
     id: 52,
-    type: "Categories",
+    type: "Frozen_Foods",
     imagePath: "/images/frozen-veggies.jpeg",
     productName: "Frozen Mixed Vegetables",
     productInfo: "Assorted frozen veggies, 500g bag.",
@@ -521,7 +521,7 @@ const products = [
   },
   {
     id: 53,
-    type: "Categories",
+    type: "Frozen_Foods",
     imagePath: "/images/frozen-fries.jpeg",
     productName: "Frozen French Fries",
     productInfo: "Crispy frozen shoestring fries, 1 kg bag.",
@@ -531,7 +531,7 @@ const products = [
   },
   {
     id: 54,
-    type: "Categories",
+    type: "Frozen_Foods",
     imagePath: "/images/frozen-dinners.jpeg",
     productName: "Frozen Dinners",
     productInfo: "Frozen ready-to-eat meals, assorted flavors.",
@@ -541,7 +541,7 @@ const products = [
   },
   {
     id: 55,
-    type: "Categories",
+    type: "Frozen_Foods",
     imagePath: "/images/ice-cream.jpeg",
     productName: "Vanilla Ice Cream",
     productInfo: "Creamy vanilla ice cream, 1 liter tub.",
@@ -551,7 +551,7 @@ const products = [
   },
   {
     id: 56,
-    type: "Categories",
+    type: "Household",
     imagePath: "/images/laundry-detergent.jpeg",
     productName: "Laundry Detergent",
     productInfo: "High-efficiency laundry detergent, 2 liters.",
@@ -561,8 +561,8 @@ const products = [
   },
   {
     id: 57,
-    type: "Categories",
-    imagePath: "/images/cleaning-spray.jpg",
+    type: "Household",
+    imagePath: "/images/cleaning-spray.jpeg",
     productName: "All-Purpose Cleaning Spray",
     productInfo: "Multi-surface cleaner with fresh scent, 500ml.",
     discount: 12,
@@ -571,7 +571,7 @@ const products = [
   },
   {
     id: 58,
-    type: "Categories",
+    type: "Household",
     imagePath: "/images/garbage-bags.jpeg",
     productName: "Garbage Bags",
     productInfo: "Heavy-duty 30-gallon garbage bags, 20 count.",
@@ -581,7 +581,7 @@ const products = [
   },
   {
     id: 59,
-    type: "Categories",
+    type: "Household",
     imagePath: "/images/toilet-paper.jpeg",
     productName: "Toilet Paper",
     productInfo: "Soft and strong toilet paper, 12 rolls pack.",
@@ -591,7 +591,7 @@ const products = [
   },
   {
     id: 60,
-    type: "Categories",
+    type: "Household",
     imagePath: "/images/dish-soap.jpeg",
     productName: "Dish Soap",
     productInfo: "Concentrated dish soap with lemon scent, 750ml.",

@@ -24,7 +24,7 @@ const AboutStyles = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '100vw',
+        width: '100%',
         height: 'auto',
         textAlign: 'center',
         marginTop: '20px',
@@ -68,7 +68,7 @@ const AboutStyles = {
     numberStyle: {
         color: '#a34319',
         fontWeight: 'bold',
-        fontSize: '2.2rem'
+        fontSize: '1.5rem'
     },
     labelStyle : {
         color: '#26734d',

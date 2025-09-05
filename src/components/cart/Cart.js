@@ -11,6 +11,13 @@ const Cart = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    const [exchangeRate, setExchangeRate] = useState(83);
+    useEffect(() => {
+        fetch("https://api.exchangerate.host/latest?base=USD&symbols=INR")
+            .then(res => res.json())
+            .then(data => setExchangeRate(data.rates.INR))
+            .catch(() => setExchangeRate(83)); // fallback if API fails
+    }, []);
     const loadCart = async () => {
         try {
             const res = await fetch(`${API}/cartProducts`);
@@ -81,14 +88,14 @@ const Cart = () => {
                     {items.length === 0 && <p className="m-3">Cart is empty.</p>}
                     {items.map((p) => (
                         <div key={p.id} className="card" style={{ width: "300px" }}>
-                            <img src={p.imagePath} className="card-img-top" style={{width: "100%", height: "200px"}} alt={p.productName || 'Product'} />
+                            <img src={p.imagePath} className="card-img-top" style={{ width: "100%", height: "200px" }} alt={p.productName || 'Product'} />
                             <div className="card-body">
                                 <h5 className="card-title">{p.productName}</h5>
                                 <p className="card-text">{p.productInfo}</p>
                                 <div style={styles.cart}>
                                     <span style={styles.discount}>{p.discount}%</span>
                                     <span>
-                                        {p.price} <em style={{ textDecoration: 'line-through' }}>{p.actualPrice}</em>
+                                        ₹{(p.price * exchangeRate).toFixed(2)} | <em>{(p.actualPrice * exchangeRate).toFixed(2)}</em>
                                     </span>
                                     <button
                                         type="button"
@@ -122,37 +129,40 @@ const Cart = () => {
                                         <h6 className="my-0">{p.productName}</h6>
                                         <small className="text-body-secondary">{p.productInfo}</small>
                                     </div>
-                                    <span className="text-body-secondary">₹{p.price}</span>
+                                    <span className="text-body-secondary">
+                                        ₹{(p.price * exchangeRate).toFixed(2)}
+                                    </span>
                                 </li>
                             ))}
 
                             {/* Totals */}
                             <li className="list-group-item d-flex justify-content-between">
                                 <span>Original Price</span>
-                                <strong>₹{totals.totalActualPrice.toFixed(2)}</strong>
+                                <strong>₹{(totals.totalActualPrice * exchangeRate).toFixed(2)}</strong>
                             </li>
                             <li className="list-group-item d-flex justify-content-between text-success">
                                 <span>You Save</span>
-                                <strong>−₹{totals.totalSavings.toFixed(2)}</strong>
+                                <strong>−₹{(totals.totalSavings * exchangeRate).toFixed(2)}</strong>
                             </li>
                             <li className="list-group-item d-flex justify-content-between">
                                 <span>Total</span>
-                                <strong>₹{totals.totalPrice.toFixed(2)}</strong>
+                                <strong>₹{(totals.totalPrice * exchangeRate).toFixed(2)}</strong>
                             </li>
                         </ul>
+
 
                         {/* Promo code form */}
                         <form className="card p-2">
                             <div className="input-group">
                                 <input type="text" className="form-control" placeholder="Promo code" />
                                 <button type="submit" className="btn btn-secondary">Redeem</button>
-                                
+
                             </div>
-                             <button type="button" class="btn btn-primary m-2">Continue to checkout</button>
+                            <button type="button" class="btn btn-primary m-2">Continue to checkout</button>
                         </form>
                     </div>
                 </div>
-               
+
             </div>
 
         </div>

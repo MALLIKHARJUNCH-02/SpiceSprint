@@ -28,28 +28,54 @@ const About = () => {
             <div style={styles.Welcome}>
                 <h3 style={styles.h1}>Welcome to SpiceSprint!</h3>
                 <div>
-                    <p style={{color: ' #26734d'}}>
+                    <p style={{ color: ' #26734d' }}>
                         Empowering your kitchen. Saving you time. Connecting neighborhoods with fresh groceries and delicious meals every day.
                     </p>
                 </div>
             </div>
 
-            <div style={{...styles.quickFactsStyle, display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <div style={{ ...styles.quickFactsStyle, display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                 <div>
                     {/* <span style={styles.labelStyle}>Serving:&nbsp;</span> */}
-                    <span style={styles.numberStyle}><CountUp end={10} duration={2} />+ cities</span>
+                    <span style={styles.numberStyle}>
+                        <span style={{ color: "blue" }}>
+                            <CountUp end={10} duration={2} />
+                        </span>
+                        <span style={{ color: "green" }}> + cities</span>
+                    </span>
+
                 </div>
                 <div>
                     {/* <span style={styles.labelStyle}>Deliveries:&nbsp;</span> */}
-                    <span style={styles.numberStyle}> <CountUp end={5000} duration={1} separator=',' />+ Deliveries</span>
+                    {/* <span style={styles.numberStyle}> <CountUp end={5000} duration={1} separator=',' />+ Deliveries</span> */}
+                    <span style={styles.numberStyle}>
+                        <span style={{ color: "blue" }}>
+                            <CountUp end={5000} duration={2} />
+                        </span>
+                        <span style={{ color: "green" }}> + Deliveries</span>
+                    </span>
                 </div>
                 <div>
                     {/* <span style={styles.labelStyle}>Vendors:&nbsp;</span> */}
-                    <span style={styles.numberStyle}> <CountUp end={50} duration={1} />+ local partners</span>
+                    {/* <span style={styles.numberStyle}> <CountUp end={50} duration={1} />+ local partners</span> */}
+
+                    <span style={styles.numberStyle}>
+                        <span style={{ color: "blue" }}>
+                            <CountUp end={50} duration={2} />
+                        </span>
+                        <span style={{ color: "green" }}> + local partners</span>
+                    </span>
                 </div>
                 <div>
                     {/* <span style={styles.labelStyle}>Customers:&nbsp;</span> */}
-                    <span style={styles.numberStyle}> <CountUp end={1000} duration={1} separator=',' />+ happy hearts </span>
+                    {/* <span style={styles.numberStyle}> <CountUp end={1000} duration={1} separator=',' />+ happy hearts </span> */}
+
+                    <span style={styles.numberStyle}>
+                        <span style={{ color: "blue" }}>
+                            <CountUp end={1000} duration={2} />
+                        </span>
+                        <span style={{ color: "green" }}> + happy hearts</span>
+                    </span>
                 </div>
             </div>
 
