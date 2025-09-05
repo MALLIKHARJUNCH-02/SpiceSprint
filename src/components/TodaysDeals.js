@@ -10,7 +10,7 @@ const TodaysDeals = () => {
             <div style={styles.header}>Today's Deals
                 <div style={styles.viewAll} >
                     <p>Limited time offers</p>
-                    <Link to="/deals" className="link-info">Deals</Link>
+                    <Link to="/deals" className="link-opacity-100">Deals</Link>
                 </div>
             </div>
 

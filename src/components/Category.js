@@ -10,7 +10,7 @@ const Category = () => {
             <div>
                 <h2>Shop by Category</h2>
                 <p>Everything you need, delivered fresh</p>
-                <Link to="/categories" className="link">View All Categories</Link>
+                <Link to="/categories" className="link-opacity-100">View All Categories</Link>
             </div>
 
             <div style={styles.categories}>
