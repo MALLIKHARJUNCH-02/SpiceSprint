@@ -18,6 +18,7 @@ const Cart = () => {
             .then(data => setExchangeRate(data.rates.INR))
             .catch(() => setExchangeRate(83)); // fallback if API fails
     }, []);
+    
     const loadCart = async () => {
         try {
             const res = await fetch(`${API}/cartProducts`);

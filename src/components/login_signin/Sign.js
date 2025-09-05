@@ -128,7 +128,7 @@ const SignIn = () => {
 
                     <p>
                         Already have an account?{" "}
-                        <Link to="/loginsignup" className="link fs-5">
+                        <Link to="/loginsignup" className="link-success fs-5">
                             Sign In
                         </Link>
                     </p>

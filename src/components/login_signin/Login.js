@@ -92,7 +92,7 @@ const LogIn = () => {
                     </div>
                     <button className="btn btn-success w-100 py-2 m-1" type="submit">Sign in</button>
 
-                    <p>If You Don't Have Account Please <Link to='/signup' className="link fs-5">Sign Up</Link></p>
+                    <p>If You Don't Have Account Please <Link to='/signup' className="link-success fs-5">Sign Up</Link></p>
 
                     {message && <p style={{ color: messageType === "success" ? "green" : "red" }}>{message}</p>}
                 </form>
