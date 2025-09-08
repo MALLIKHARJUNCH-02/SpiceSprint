@@ -44,8 +44,8 @@ const LogIn = () => {
                 setMessageType("success")         // Update message in state
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("isLoggedIn", "true");
-                localStorage.setItem("userName", data.name);
-                localStorage.setItem("userEmail", data.email);
+                localStorage.setItem("userName", data.user.name);
+                localStorage.setItem("userEmail", data.user.email);
 
                 fetch("/api/secure-data", {
                     headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
