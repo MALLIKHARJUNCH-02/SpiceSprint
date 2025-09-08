@@ -42,9 +42,15 @@ const LogIn = () => {
             if (response.ok) {
                 setMessage(data.message);
                 setMessageType("success")         // Update message in state
+                localStorage.setItem("token", data.token);
                 localStorage.setItem("isLoggedIn", "true");
                 localStorage.setItem("userName", data.name);
                 localStorage.setItem("userEmail", data.email);
+
+                fetch("/api/secure-data", {
+                    headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
+                });
+
                 setTimeout(() => {
                     navigate("/profile");
                 }, 2000);
@@ -66,10 +72,10 @@ const LogIn = () => {
                 <form className="w-50" onSubmit={handleSubmit}>
                     <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
                     <p style={{ color: 'red' }}>
-                        <strong>Note:</strong> Please note this web application is hosted on a free backend service, 
+                        <strong>Note:</strong> Please note this web application is hosted on a free backend service,
                         which may cause occasional delays while the server wakes up. Additionally, the backend is still
-                         under active development, so some features may not be fully functional yet. Your patience and understanding
-                          during this phase are greatly appreciated.
+                        under active development, so some features may not be fully functional yet. Your patience and understanding
+                        during this phase are greatly appreciated.
                     </p>
                     <div className="form-floating m-1">
                         <input
