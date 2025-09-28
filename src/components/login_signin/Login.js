@@ -104,6 +104,22 @@ const LogIn = () => {
                     {message && <p style={{ color: messageType === "success" ? "green" : "red" }}>{message}</p>}
                 </form>
             </div>
+
+            {/* <div className="mt-1">
+                <p className="text-center">Or sign in with</p>
+                <div className="d-flex justify-content-center">
+                    Google Button 
+                    <a href="https://spicesprintbe.onrender.com/api/auth/google" className="btn btn-outline-danger">
+                        <i className="bi bi-google"></i> Google
+                    </a>
+
+                    GitHub Button (if you add GitHub OAuth later)
+                    <a href="https://spicesprintbe.onrender.com/api/auth/github" className="btn btn-outline-dark m-1">
+                        <i className="bi bi-github"></i> GitHub
+                    </a>
+                </div>
+            </div> */}
+
         </div>
     );
 }
